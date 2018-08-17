@@ -23,12 +23,15 @@ def min_spread_day():
 
             data.append((day.decode(), maxt - mint))
 
+    if not data:
+        return None
+
     data.sort(key=lambda d: d[1])
 
     return data[0][0]
             
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     print("Day with minimum spread is :", min_spread_day())
 
