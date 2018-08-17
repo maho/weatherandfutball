@@ -25,7 +25,7 @@ def min_identifier(url, idrange, hirange, lorange, ignrows=2, ignids=None):
             request.readline()
 
         for line in request:
-            if not line or line.startswith(b"---"):
+            if not line or line.strip().startswith(b'-----'):
                 continue
             idrow = line[slice(*idrange)].strip().decode()
             if ignids and idrow in ignids:

@@ -1,5 +1,6 @@
 import pytest
 
+import football
 import weather
 
 def test_weather_url():
@@ -7,6 +8,12 @@ def test_weather_url():
 
     ret = weather.min_spread_day()
     assert ret == '14'
+
+
+def test_footbal_url():
+    """ just run and check if result is as expected """
+    ret = football.min_for_against()
+    assert ret == 'Leicester'
 
 def wdata2url(data):
     content = 'ignored\n\n'
