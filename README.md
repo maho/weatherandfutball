@@ -1,16 +1,16 @@
-# Weather
+### Weather
 
- ```python
+ ```bash
   $ python weather.py
  ```
  
- # Football
+### Football
  
  ```bash
   $ python football.py
  ```
  
- # to test and coverage:
+### to test and coverage:
  
  ```bash
  
